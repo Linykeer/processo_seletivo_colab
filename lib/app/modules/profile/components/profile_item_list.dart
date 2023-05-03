@@ -3,11 +3,7 @@ import 'package:flutter_modular/flutter_modular.dart';
 import 'package:processo_seletivo_colab/app/models/profile_model.dart';
 import 'package:processo_seletivo_colab/app/modules/profile/profile_controller.dart';
 
-Widget itemList({
-  required ProfileModel profileModel,
-  bool list = false,
-  required BuildContext context,
-}) {
+Widget itemList({required ProfileModel profileModel, bool list = false, required BuildContext context}) {
   final controller = Modular.get<ProfileController>();
   var index = controller.listPerfil.indexOf(profileModel);
   return Container(
